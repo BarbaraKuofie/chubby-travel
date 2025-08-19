@@ -3,6 +3,7 @@ import Tab from '@mui/material/Tab';
 import logo from './assets/logo.png';
 import ChubbyProperties from '../ChubbyProperties/ChubbyProperties';
 import Submissions from '../Submissions/Submissions';
+import Reviews from '../Reviews/Reviews';
 
 export const CHUBBY_PROPERTIES = 'Chubby ProperTies';
 export const FAT_PROPERTIES = 'Fat ProperTies';
@@ -35,19 +36,19 @@ export const renderContent = (name: string, index: number) => {
 
   export const renderTabPanelChildren = (value: number) => {
       switch (value) {
-          case 1:
+          case 0:
               return (
                     <ChubbyProperties />
               )
-          case 2:
+          case 1:
               return (
                  <div>ChubbyProperties</div>
               )
-          case 3:
+          case 2:
               return (
-                  <div> Hello</div>
+                <Reviews />
               )
-          case 4:
+          case 3:
               return (
                   <Submissions />
               )

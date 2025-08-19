@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import { InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import IconButton from '@mui/material/IconButton';
-import {searchHotel} from '../Service/DataApi';
+import {searchChubbyHotels} from '../Service/DataApi';
 
 
 const Submissions = () => {
@@ -15,7 +15,7 @@ const Submissions = () => {
 
     const handleSubmitIconClick = (value: any) => {
         console.log('clicked', value);
-        searchHotel(value)
+        searchChubbyHotels(value)
     }
     return (
        <form>

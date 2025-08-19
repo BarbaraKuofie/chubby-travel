@@ -2,6 +2,7 @@ import React from 'react';
 import Tabs from '@mui/material/Tabs';
 import logo from '../assets/logo.png';
 import { renderTabPanelChildren, renderContent, tabs} from './HeaderDetailUtil';
+import { Typography } from '@mui/material';
 
 const HeaderDetails = () => {
   const [value, setValue] = React.useState(0);
@@ -13,6 +14,8 @@ const HeaderDetails = () => {
 
   return (
       <>
+      {/* <Typography variant="subtitle1">The Chubby Traveler</Typography> */}
+      <img src={logo} alt="logo" />
       <Tabs
         value={value}
         onChange={handleChange}
@@ -21,7 +24,7 @@ const HeaderDetails = () => {
         aria-label="secondary tabs example"
         variant="fullWidth"
       >
-        <img src={logo} alt="logo" />
+        
         {tabs.map((name, index) => (
           renderContent(name, index)
         ))}
