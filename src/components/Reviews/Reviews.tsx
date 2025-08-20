@@ -3,11 +3,14 @@ import { useState, useEffect } from 'react';
 // import { getReviews } from '../Service/DataApi';
 import { Button, Card, CardContent, CardMedia, Typography, CardActions, Container } from '@mui/material';
 import { classes } from '../Styles';
-
+import AddReview from './AddReview';
 
 const Reviews = () => {
+	const [reviews, setReviews] = useState([]);
+	const [openReviewModal, setOpenReviewModal] = useState(false);
 	return (
 		<Container sx={classes.container}>
+			<AddReview open={openReviewModal} setOpen={setOpenReviewModal} />
 			{/* <Card > */}
 				{/* <CardMedia
 					sx={classes.cardMedia}
@@ -28,6 +31,9 @@ const Reviews = () => {
 					</Button>
 				{/* </CardActions>
 			</Card> */}
+			<Button variant="contained" color="primary" sx={{ marginTop: 2 }} onClick={() => setOpenReviewModal(true)}>
+				Submit A Review
+			</Button>
 		</Container>
 	);
 };

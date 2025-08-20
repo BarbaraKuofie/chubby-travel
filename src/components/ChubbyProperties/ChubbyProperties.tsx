@@ -34,7 +34,7 @@ const ChubbyProperties = () => {
   useEffect(() => {
     setIsLoading(true);
     if (chubbyProperties.length === 0) {
-      fetchProperties('chicago');
+      fetchProperties('thailand');
     }
   }, []);
 
