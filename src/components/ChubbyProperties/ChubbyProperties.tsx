@@ -4,11 +4,14 @@ import { searchChubbyHotels } from '../Service/DataApi';
 import { Button, Card, CardContent, CardMedia, Typography, CardActions, Container, CircularProgress } from '@mui/material';
 import { classes } from '../Styles';
 import { LocationSelection } from '../Header/LocationSelection';
+import Hotel from '../Hotel/Hotel';
 
 const ChubbyProperties = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [chubbyProperties, setChubbyProperties] = useState([]);
   const [location, setLocation] = useState('thailand'); // Default location can be set here
+  const [selectedHotelId, setSelectedHotelId] = useState<number | null>(null);
+
   const fetchProperties = async (location: string) => {
     const response: any = await searchChubbyHotels(location);
     if (!response || response.length === 0) {
@@ -44,7 +47,12 @@ const ChubbyProperties = () => {
     }
   }, [location]);
 
-  
+  // Show Hotel details page if a hotel is selected
+  if (selectedHotelId !== null) {
+    return (
+      <Hotel hotelId={selectedHotelId} onBack={() => setSelectedHotelId(null)} />
+    );
+  }
 
   return (
     <>
@@ -73,7 +81,7 @@ const ChubbyProperties = () => {
                </Typography>
 
            <CardActions sx={classes.cardActions}>
-             <Button size="small" color='inherit'>Learn More</Button>
+             <Button size="small" color='inherit' onClick={() => setSelectedHotelId(property.id)}>Learn More</Button>
              <Button color='inherit' onClick={() => window.open(property.address)} size="small">Visit Property</Button>
            </CardActions>
              </CardContent>
