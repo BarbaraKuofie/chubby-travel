@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeeddc63-e485-484e-8b66-f86a7c042690" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ChubbyProperties/ChubbyProperties.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderDetailUtil.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderDetails.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Service/DataApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Submissions/Submissions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/LocationSelection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChubbyProperties/ChubbyProperties.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChubbyProperties/ChubbyProperties.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Reviews/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reviews/AddReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Submissions/Submissions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Submissions/Submissions.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,25 +19,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2uV7yXZmsMG3fJQi2dmStUxgnww" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/barbara.kuofie/Chubby/chubby-travel",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/barbara.kuofie/Chubby/chubby-travel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Header" />

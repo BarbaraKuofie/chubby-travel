@@ -154,9 +154,20 @@ export const AddReview = (props: AddReviewProps) => {
                                     label="Location (City, Country)"
                                     variant="outlined"
                                     fullWidth
-                                    value={value}
-                                    onChange={(e) => setValue(e.target.value)}
+                                    value={location}
+                                    onChange={(e) => setLocation(e.target.value)}
                                 />
+                                <Box sx={{ marginTop: 2 }}>
+                                    <Typography variant="subtitle1" sx={{ marginBottom: 1 }}>
+                                        Add Photos/Videos
+                                    </Typography>
+                                    <input
+                                        type="file"
+                                        name="images"
+                                        multiple
+                                        required
+                                    />
+                                </Box>
                                 <Typography variant="subtitle1" sx={{ marginTop: 2 }}>
                                     How would you rate your overall experience?
                                 </Typography>
@@ -187,7 +198,7 @@ export const AddReview = (props: AddReviewProps) => {
                                 <TextField
                                     required
                                     id="food"
-                                    label="how were the food, drinks and dining experience?"
+                                    label="How were the food, drinks and dining experience?"
                                     variant="outlined"
                                     fullWidth
                                     multiline
